@@ -52,7 +52,7 @@ To approach this problem numerically in python, I created a function that goes t
 
 \section{Question 2}
 
-This scenario can be tested very similaly to the first one.   Similar to the problem in the first scenario, I created a function to test how many days in a month it rains.  In the funcition, I created a variable and set the chance of rain equal to 0.10, and test to see whether or not it rains 8 or more days in the month.  To do this, I ran a loop through the days of the month, and if a day's value falls under the chance of rain, the counter increases by 1.  If the counter reaches 8, the loop will break and the function will return \textbf{True}.  Otherwise, the function returns \textbf{False}.  To obtain a percentage for how often it rains 8 or more days per month, we will loop over this funciton with new sets of random days like in the first example.  The percentage given is equal to $ \frac{raincounter}{nmonths} * 100 \approx  0.70 \% $
+This scenario can be tested very similaly to the first one.   Similar to the problem in the first scenario, I created a function to test how many days in a month it rains.  In the funcition, I created a variable and set the chance of rain equal to 0.10, and test to see whether or not it rains 8 or more days in the month.  To do this, I ran a loop through the days of the month, and if a day's value falls under the chance of rain, the counter increases by 1.  If the counter reaches 8, the loop will break and the function will return \textbf{True}.  Otherwise, the function returns \textbf{False}.  To obtain a percentage for how often it rains 8 or more days per month, we will loop over this funciton with new sets of random days like in the first example.  The percentage given is equal to $ \frac{raincounter}{nmonths} * 100 \approx  0.7 \% $
 
 \section{Question 3}
 
@@ -60,7 +60,7 @@ This scenario can be tested very similaly to the first one.   Similar to the pro
 
 \subsection{3a} 
 
-In order to find the chance it rains at least \textbf{10 cm} in a month, we must create a new function that takes in a month's worth of days.   In the function, the chance it rains depends on if it rained the day beforehand.  To make sure this was taken into account for, I created a set of conditionals.  If the day in the month satisfies a conditional, that day is given a value of \textbf{True}.  Everytime a value is deemed to be true, a counter increases by \textbf{1}.  In order to determine how much it rains in the month, another set of conditionals is needed.  These conditionals will be looped over $x$ amount of times, where $x$ is equal to the number of days it rains in each month.  For each day, a random number will be generated, and depending on the range this number falls within, it will rain a certain number of centimeters.  The amount of rain each day is added to a new counter, and this counter is returned by the function.  To obtain a percentage of months it rains at least \textbf{10 cm}, I looped over this function $n$ amount of times.  In the loop, a new month is generated each time the function is looped over.  A conditional then tests if the month did in fact have \textbf{10 cm} of rain.  If it did, the counter increases by \textbf{1}.  The percentage of months it rains \textbf{10 cm} is then equal to $ \frac{10cm~Months}{nmonths} * 100 \approx 34 \% $.
+In order to find the chance it rains at least \textbf{10 cm} in a month, we must create a new function that takes in a month's worth of days.   In the function, the chance it rains depends on if it rained the day beforehand.  To make sure this was taken into account for, I created a set of conditionals.  If the day in the month satisfies a conditional, that day is given a value of \textbf{True}.  Everytime a value is deemed to be true, a counter increases by \textbf{1}.  In order to determine how much it rains in the month, another set of conditionals is needed.  These conditionals will be looped over $x$ amount of times, where $x$ is equal to the number of days it rains in each month.  For each day, a random number will be generated, and depending on the range this number falls within, it will rain a certain number of centimeters.  The amount of rain each day is added to a new counter, and this counter is returned by the function.  To obtain a percentage of months it rains at least \textbf{10 cm}, I looped over this function $n$ amount of times.  In the loop, a new month is generated each time the function is looped over.  A conditional then tests if the month did in fact have \textbf{10 cm} of rain.  If it did, the counter increases by \textbf{1}.  The percentage of months it rains \textbf{10 cm} is then equal to $ \frac{10cm~Months}{nmonths} * 100 \approx 39 \% $.
 
 \subsection{3b}
 
@@ -77,11 +77,11 @@ To create a histogram to show the distribution of rainfall, I am able to use the
 
 \subsection{3c}
 
-To calculate the aberage rainfall per month, I looped over the list of values obtained in \textit{3a}.  I add the value of rain in each individual month out of the list, and divide by the total number of months tested in the list.  The average rainfall per month is $ \frac{total~ rain}{nmonths} \approx 8$~cm per month.
+To calculate the aberage rainfall per month, I looped over the list of values obtained in \textit{3a}.  I add the value of rain in each individual month out of the list, and divide by the total number of months tested in the list.  The average rainfall per month is $ \frac{total~ rain}{nmonths} \approx 8.5 $~cm per month.
 
 \subsection{3d}
 
-In order to determine a range to quote, I sorted the list of values obtained in \textit{3a} so that they were listed in numerical order.  From there, I can take the range from the 2.5\% position to the 97.5\% postion.  I'm 95 \% confident that the rainfall will be between 0 and 19 cm per month.
+In order to determine a range to quote, I sorted the list of values obtained in \textit{3a} so that they were listed in numerical order.  From there, I can take the range from the 2.5\% position to the 97.5\% postion.  I'm 95 \% confident that the rainfall will be between 0 and 21 cm per month.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
